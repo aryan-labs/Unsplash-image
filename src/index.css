@@ -1,0 +1,133 @@
+.dark{
+  background:#333;
+  color: white;
+  
+}
+.light{
+  color: black;
+ 
+}
+body.dark .form-input-search {
+  color: white;
+  background-color: #333;
+  /* Optional, for a dark background in dark mode */
+}
+
+
+body:not(.dark) .form-input-search {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  /* Optional, for a light background in light mode */
+}
+.night-icon{
+  font-size: 30px;
+}
+.night-icon{
+display: flex;
+align-items:flex-end;
+flex-direction: column;
+padding-right: 100px;
+margin-top: 20px;
+}
+.form-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-input h1{
+  font-size: 62px;
+  font-weight: 100;
+  color: #645cff;
+}
+.form-input input{
+  height: 27px;
+  width: 500px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.form-input button{
+  color: white;
+  background-color:#645cff;
+  border: none;
+  height: 30px;
+  width: 100px;
+}
+.results-img{
+  width: 350px;
+  height: 160px;
+  
+}
+.results{
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin-top: 20px;
+}
+@media (max-width:1050px) {
+  .results{
+    display: grid;
+    gap:10px;
+    grid-template-columns: 2fr 2fr;
+  };
+  
+}
+@media (max-width:780px) {
+  .results {
+    display: grid;
+    justify-items: center;
+  grid-template-columns: 1fr;
+ 
+    gap: 10px;
+
+ 
+  }
+  .form-input input{
+    width: 350px;
+  }
+  
+}
+@media (max-width:500px) {
+.form-input input{
+  width: 240px;
+}  
+.form-input h1{
+  font-size: 40px;
+}
+}
+
+@media (max-width:400px) {
+  .form-input input {
+    width: 240px;
+  }
+
+  .form-input h1 {
+    font-size: 40px;
+  }
+  .results-img{
+    width: 300px;
+  }
+}
+@media (max-width:380px) {
+  .night-icon{
+    padding-left: 270px;
+  }
+  .form-input input {
+    width: 170px;
+  }
+  .form-input button{
+    width: 70px;
+  }
+
+  .form-input h1 {
+    font-size: 40px;
+  }
+
+  .results-img {
+    width: 240px;
+  }
+}
